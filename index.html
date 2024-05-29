@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>ERRCHA COIN Clicker</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vibrate.js/1.0.0/vibrate.min.js"></script>
+    </head>
+<body>
+    <div class="container">
+        <h1 class="title">ERRCHA C0IN</h1>
+        <div id="balance">0 $</div>
+        
+        <div class="click-layer">
+            <button id="clickButton" class="click-button">ERRCHA</button>
+        </div>
+        
+        <div class="upgrade-layer">
+            <button id="upgradeButton" class="upgrade-button">UPGRADE</button>
+        </div>
+    </div>
+
+    <div id="upgradeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="upgrade-title">UPGRADE</h2>
+            <button class="upgrade-item" id="multiTap">MULTI TAP $100</button>
+            <button class="upgrade-item" id="invest">INVEST $100</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
