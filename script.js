@@ -37,31 +37,6 @@ function addPressEffect(button) {
     });
 }
 
-clickButton.addEventListener('click', (event) => {
-    balance++;
-    updateBalance();
-    createCoinAnimation(event.clientX, event.clientY); // Передаем координаты места нажатия
-});
-
-function updateBalance() {
-    balanceAmount.textContent = balance;
-}
-
-function createCoinAnimation(x, y) {
-    const coin = document.createElement('div');
-    coin.classList.add('coin');
-    coin.textContent = '+1';
-
-    // Устанавливаем координаты монетки
-    coin.style.left = `${x}px`;
-    coin.style.top = `${y}px`;
-
-    document.body.appendChild(coin);
-
-    setTimeout(() => {
-        coin.remove();
-    }, 1000); // Время анимации (в миллисекундах)
-}
 
 // Применяем визуальный отклик ко всем кнопкам
 addPressEffect(clickButton);
@@ -120,3 +95,4 @@ allButtons.forEach(button => {
 
 // Запускаем пассивный доход
 passiveIncome();
+
