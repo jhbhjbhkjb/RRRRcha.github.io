@@ -137,11 +137,7 @@ body {
     box-shadow: 0 1px #cc5200;
 }
 
-.coin {
-    position: absolute; /* Абсолютное позиционирование для корректного отображения монетки */
-    font-size: 24px;
-    color: gold; /* Цвет монетки */
-} 
+
 
 @keyframes fadeIn {
     from { opacity: 0; }
